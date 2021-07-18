@@ -1,0 +1,9 @@
+<div class="container mt-3">
+  <div style="display: flex; justify-content:center">
+    {{#if user}}
+    <h2>Welcome back, {{ user.firstName }}!</h2>
+    {{else}}
+    <h2>Username 或 Password 錯誤</h2>
+    {{/if}}
+  </div>  
+</div>
