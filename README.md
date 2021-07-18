@@ -47,7 +47,7 @@ npm run seed
 ```
 npm run dev
 ```
-6. 出現以下訊息後，即可在 http://localhost:3000 開始使用
+6. 出現以下訊息後，即可在 http://localhost:3000/login 開始使用
 ```
-This server is running on http://localhost:3000
+This server is running on http://localhost:3000/login
 ```
