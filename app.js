@@ -1,20 +1,12 @@
 const express = require('express')
 const app = express()
+const routes = require('./routes')
 
 const port = 3000
 
-const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/user-auth', { useNewUrlParser: true, useUnifiedTopology: true })
+app.use(routes)
 
-const db = mongoose.connection
-
-db.on('error', () => {
-  console.log('mongodb error!')
-})
-
-db.once('open', () => {
-  console.log('mongodb connected!')
-})
+require('./config/mongoose')
 
 app.get('/', (req, res) => {
   res.send('Good!')
